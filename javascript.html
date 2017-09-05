@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Activity page</title>
+  </head>
+  <body>
+	<h1>Hello Bob</h1>
+ 
+	<label for="name">Enter name:</label>
+	<input type="text" id="name">
+	<button>Change user</button>
+
+
+<script>
+	document.querySelector('button').onclick = function() {
+	var currentName= document.querySelector('h1');
+	var myName = document.querySelector('input').value;
+	if(myName.trim() === '' || myName == '') {
+  		alert('input field is empty');
+  	}
+  	else {
+  		currentName.textContent = document.querySelector('input').value;
+  	}
+}
+</script>
+  </body>
+
+
+</html>
+
+
+

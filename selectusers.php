@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>Select User</title>
 </head>
 <?php
 $serverName = "localhost";
@@ -30,7 +31,7 @@ echo "<table><tr><th>ID</th><th>First Name</th><th>Middle Name</th><th>Last Name
     		$gender = 'Female';
     	}
 
-        echo "<tr id='row".$counter."'><td>" . $row["id"]. "</td><td>" . $row["first_name"]. "</td><td>" . $row["middle_name"]. "</td><td>" . $row["last_name"]. "</td><td>" . $gender. "</td><td>".$row["birthday"]."</td><td>". $row["created_date"]. "</td><td>" . $row["modified_date"]."</td><td>". $row["created_ip"]."</td><td>".$row["modified_ip"]."</td></tr>";
+        echo "<tr id='row'><td>" . $row["id"]. "</td><td>" . $row["first_name"]. "</td><td>" . $row["middle_name"]. "</td><td>" . $row["last_name"]. "</td><td>" . $gender. "</td><td>".$row["birthday"]."</td><td>". $row["created_date"]. "</td><td>" . $row["modified_date"]."</td><td>". $row["created_ip"]."</td><td>".$row["modified_ip"]."</td></tr>";
 
     
     }

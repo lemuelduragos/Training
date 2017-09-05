@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>Select Products</title>
 </head>
 <?php
 $serverName = "localhost";
@@ -24,7 +25,7 @@ echo "<table><tr><th>ID</th><th>Product ID</th><th>Name</th><th>Description</th>
     while($row = mysqli_fetch_assoc($result)) {
     	
 
-        echo "<tr id='row".$counter."'><td>" . $row["id"]. "</td><td>" . $row["product_id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["description"]. "</td><td>" . $row["type"]. "</td><td>" . $row["created_date"]. "</td><td>" . $row["modified_date"]."</td><td>". $row["created_ip"]."</td><td>".$row["modified_ip"]."</td></tr>";
+        echo "<tr id='row'><td>" . $row["id"]. "</td><td>" . $row["product_id"]. "</td><td>" . $row["name"]. "</td><td>" . $row["description"]. "</td><td>" . $row["type"]. "</td><td>" . $row["created_date"]. "</td><td>" . $row["modified_date"]."</td><td>". $row["created_ip"]."</td><td>".$row["modified_ip"]."</td></tr>";
 
     
     }

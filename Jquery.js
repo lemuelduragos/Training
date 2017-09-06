@@ -1,13 +1,13 @@
 
-	$( "#header1" ).click(function( event ) {
+	$("h3:first").click(function( event ) {
 		event.preventDefault();
  
-	$("#paragraph1").toggle("slow");
+	$("p:first").toggle("slow");
 	});
 
 
-	$( "#header2" ).click(function( event ) {
+	$("h3:nth-of-type(2)").click(function( event ) {
 		event.preventDefault();
  
-	$("#paragraph2").toggle("slow");
+	$("p:nth-of-type(2)").toggle("slow");
 	});

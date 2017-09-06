@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -19,9 +19,10 @@
 <option value='11'>November</option>
 <option value='12'>December</option>
 </select>
-<input name="year" type="text" required></input>
+<input name="year" type="number" required max="9999" min="1800"></input>
 <button type="submit">Generate Calendar</button>
 </form>
+<br>
 <div id="calendar"><table><tr><th>Sunday</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th></tr></div>
 </body>
 

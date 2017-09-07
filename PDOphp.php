@@ -32,7 +32,11 @@ function addRow($tableName, $value) {
 
 function selectAllRows($tableNameSelectAll) {
 	$sqlInsert = "SELECT* FROM $tableNameSelectAll";
-
+	$conn = new DatabaseConnection();
+	$stmt = $conn->prepare($sql);
+	$stmt->execute();
+	$cou = $stmt->rowCount();
+	$result = $stmt->fetch();
 }
 
 

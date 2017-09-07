@@ -23,22 +23,6 @@ while($ctr<=$returnQuantity) {
 }
 echo "<br>";
 echo "<br>";
-/*
-function checkArray() {
-	$array1 = array('alpha', 'beta', 'charlie', 'delta', 'foxtrot', 'golf', 'india');
-	$array2 = array('alpha', 'charlie', 'india', 'hotel', 'test');
-	$array2Count = sizeof($array2)-1;
-	$checkCounter=0;
-
-	while($checkCounter<=$array2Count) {
-		if(in_array($array2[$checkCounter], $array1)) {
-			echo $array2[$checkCounter]." ";	
-		}
-		$checkCounter++;
-	}
-}
-checkArray(); //execute function
-*/
 
 
 function checkArray2($array1,$array2) {
@@ -57,5 +41,25 @@ echo "<br>";
 echo "<br>";
 $var = false;
 echo gettype($var);
+
+
+
+
+/*
+function checkArray() {
+	$array1 = array('alpha', 'beta', 'charlie', 'delta', 'foxtrot', 'golf', 'india');
+	$array2 = array('alpha', 'charlie', 'india', 'hotel', 'test');
+	$array2Count = sizeof($array2)-1;
+	$checkCounter=0;
+
+	while($checkCounter<=$array2Count) {
+		if(in_array($array2[$checkCounter], $array1)) {
+			echo $array2[$checkCounter]." ";	
+		}
+		$checkCounter++;
+	}
+}
+checkArray(); //execute function
+*/
 
 ?>
